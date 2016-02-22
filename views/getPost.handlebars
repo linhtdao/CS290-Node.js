@@ -1,0 +1,15 @@
+<h1>{{this.objectName}} request received</h1>
+
+The following items were received via the URL query string:
+<ul>
+  {{#each dataList}}
+    <li>{{this.name}}: {{this.value}}
+  {{/each}}
+</ul>
+
+The following items were received via the request body (POST request only):
+<ul>
+  {{#each bDataList}}
+    <li>{{this.bodyName}}: {{this.bodyValue}}
+  {{/each}}
+</ul>
